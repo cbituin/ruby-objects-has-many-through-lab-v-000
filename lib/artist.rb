@@ -26,9 +26,11 @@ class Artist
   end
   
   def genres
+    genres = []
     self.songs.map { |song| 
-    binding.pry
+    genres << song.genre
     }
+    genres
   end
   
 end
